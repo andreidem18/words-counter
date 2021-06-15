@@ -18,6 +18,12 @@ class File:
             ord('?'): None,
             ord('¡'): None,
             ord('!'): None,
+            ord('á'): 'a',
+            ord('é'): 'e',
+            ord('í'): 'i',
+            ord('ó'): 'o',
+            ord('ú'): 'u',
+            ord('ñ'): 'n'
         }
         return self.text.lower().translate(map).split()
         
